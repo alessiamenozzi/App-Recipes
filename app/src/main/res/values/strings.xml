@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ricettario</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="antipasti">Antipasti</string>
+    <string name="primi">Primi</string>
+    <string name="secondi">Secondi</string>
+    <string name="dolci">Dolci</string>
+    <string-array name="categoria">
+        <item>Antipasti</item>
+        <item>Primi</item>
+        <item>Secondi</item>
+        <item>Dolci</item>
+    </string-array>
+    <string-array name="strumenti">
+        <item>Frullatore</item>
+        <item>Forno</item>
+        <item>Planetaria</item>
+        <item>Frusta elettrica</item>
+        <item>Microonde</item>
+    </string-array>
+</resources>

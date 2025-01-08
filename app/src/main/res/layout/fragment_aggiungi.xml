@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.aggiungi.AggiungiFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+       >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="top"
+                >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/titolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titolo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/categoria"
+            android:entries="@array/categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:weightSum="2"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tempo_preparazione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Tempo di preparazione" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/difficolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Grado di difficoltà" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descrizione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descrizione"
+                android:minLines="8"
+                android:textAlignment="textStart" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:weightSum="2"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredienti"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/strumenti"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"/>
+
+    </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/vegetariano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"
+            android:text="Vegetariano" />
+        <CheckBox
+            android:id="@+id/vegano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Vegano" />
+        <CheckBox
+            android:id="@+id/noglutine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Senza glutine" />
+        <CheckBox
+            android:id="@+id/nolattosio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Senza lattosio" />
+
+
+
+            <Button
+                android:id="@+id/salva"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Salva"
+                android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "890376890247",
+    "project_id": "poricette",
+    "storage_bucket": "poricette.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890376890247:android:c4917767979179c9979522",
+        "android_client_info": {
+          "package_name": "com.example.po_ricette"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890376890247-hfqo0vj10fn6jia5o5ak3nlfidtuf84n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtN46-K0T650TfTzDm-O_1tLYk_kXmTSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890376890247-hfqo0vj10fn6jia5o5ak3nlfidtuf84n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
